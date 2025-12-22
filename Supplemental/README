@@ -1,5 +1,5 @@
 This directory contains an identical file structure to the one in the main directory.
 
-The primary difference between the analyses in this directory and those in the main directory is that SWEET and BONOBO are implemented using their exact original mathematical formulation, rather than the mathematics as recast into the common framework. The results of the analyses are essentially identical to those in the main directory and are only provided for completeness.
+The primary difference between the analyses in this directory and those in the main directory is that SWEET and BONOBO are implemented using their exact original mathematical formulation, rather than the mathematics as recast into the common framework. The results of these analyses are essentially identical to those in the main directory and are only provided for completeness.
 
 For more information, please refer to our manuscript. 
