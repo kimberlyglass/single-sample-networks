@@ -1,3 +1,3 @@
-This directory contains an analysis that complements the one in the main directory, except that SWEET and BONOBO are implemented using their original mathematical formulation. The results of the analyses are essentially identical to those in the primary analysis.
+This directory contains an analysis that complements and identical file structure to the one in the main directory, except that SWEET and BONOBO are implemented using their original mathematical formulation. The results of the analyses are essentially identical to those in the primary analysis.
 
 For more information, please refer to our manuscript. 
