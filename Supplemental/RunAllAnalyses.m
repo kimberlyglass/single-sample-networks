@@ -46,7 +46,7 @@ close all;
 % relevant GTEx data files used for the analysis published in [https://www.sciencedirect.com/science/article/pii/S2211124717314183] are copied to Data/GTExData/
 MinSamp=250; minMedval=2; pcfilter=1;
 datafile='./Data/GTEx_MixData3.mat';
-% MakeGTEx_MixData3(MinSamp, minMedval, pcfilter, datafile);
+MakeGTEx_MixData3(MinSamp, minMedval, pcfilter, datafile);
 
 % Figure 3 & Supplemental Figure 3C
 % show how delta and Sq vary based on percentage of samples from two populations / tissues
