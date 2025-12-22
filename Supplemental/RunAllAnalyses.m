@@ -1,7 +1,7 @@
 addpath('AnalysisCode/')
 addpath('NetworkCode/')
 
-%{
+
 %%% IN SILICO DATA ANALYSIS %%%
 
 % Create In Silico Expression Data and Corresponding Single-Sample Networks
@@ -38,7 +38,7 @@ otag='Figures/Figure2/VizSqPatterns';
 PairIdx=[1,4];
 EvalSp_InSilico(datafile, PairIdx, otag);
 close all;
-%}
+
 
 
 %%% GTEX / HUMAN DATA ANALYSIS %%%
@@ -47,7 +47,7 @@ close all;
 MinSamp=250; minMedval=2; pcfilter=1;
 datafile='./Data/GTEx_MixData3.mat';
 % MakeGTEx_MixData3(MinSamp, minMedval, pcfilter, datafile);
-%{
+
 % Figure 3 & Supplemental Figure 3C
 % show how delta and Sq vary based on percentage of samples from two populations / tissues
 selTissue={'esophagus_mucosa', 'esophagus_muscularis'}; % two tissues being investigate
@@ -82,7 +82,7 @@ AgValFile='./Data/AgEdgeVals.mat';
 AgValsOfTopEdges(datafile, selTissue, NodeIdx, AgValFile); % separately calculated the overall network values
 VizSubpopByMuOverTopEdges(vizdatafile, otag, AgValFile);
 close all;
-%}
+
 % Figure 5
 NumTissues=[2,4,8,15]; NumRnds=100; NumSel=100;
 TissueLegend={'2 tissues', '4 tissues', '8 tissues', '15 tissues'};
