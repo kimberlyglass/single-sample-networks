@@ -58,7 +58,7 @@ MakeGTEx_MixData3(MinSamp, minMedval, pcfilter, datafile);
 
 % Figure 3 & Supplemental Figure 3C
 % show how delta and Sq vary based on percentage of samples from two populations / tissues
-selTissue={'esophagus_mucosa', 'esophagus_muscularis'}; % two tissues being investigate
+selTissue={'esophagus_mucosa', 'esophagus_muscularis'}; % two tissues being investigated
 NumSamp=100; % total number of samples selected to make an input dataset
 NumRnds=100;
 PerVals=[0, 0.05, 0.1, 0.2, 0.35, 0.5, 0.65, 0.8, 0.9, 0.95, 1];
