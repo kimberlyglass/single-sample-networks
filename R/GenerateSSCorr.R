@@ -44,7 +44,7 @@ GenerateSSCorr <- function(LocExp){
     cov_diag=LocCov[diag_idx];
     delta=1/(3+2*mean(sqrt(cov_diag))/var(cov_diag));
     sscov=delta*NumSamp*(AgCov-LocCov)+LocCov;
-    sds=matrix(0,NumNode,NumNode); sds[diag_idx]=sqrt(sscov[diag_idx]);
+    sds=matrix(0,NumNode,NumNode); sds[diag_idx]=sscov[diag_idx]^(-1/2);
     BON=sds %*% sscov %*% sds;
     BONO[,idx]=BON[uF];
   }
@@ -162,7 +162,7 @@ GenerateBONOBO <- function(LocExp){
     cov_diag=LocCov[diag_idx];
     delta=1/(3+2*mean(sqrt(cov_diag))/var(cov_diag));
     sscov=delta*NumSamp*(AgCov-LocCov)+LocCov;
-    sds=matrix(0,NumNode,NumNode); sds[diag_idx]=sqrt(sscov[diag_idx]);
+    sds=matrix(0,NumNode,NumNode); sds[diag_idx]=sscov[diag_idx]^(-1/2);
     BON=sds %*% sscov %*% sds;
     BONO[,idx]=BON[uF];
   }
