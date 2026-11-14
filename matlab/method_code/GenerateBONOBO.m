@@ -27,5 +27,5 @@ for(idx=1:NumSamp)
 	BONO(:,idx)=BON(uF);
 end
 % merge matrices into one structure to return
-AllSSN={BONO};
+AllSSN=BONO;
 

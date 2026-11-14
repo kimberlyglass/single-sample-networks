@@ -24,5 +24,5 @@ for(idx=1:NumSamp)
 	SSN(:,idx)=(NumSamp-2)*(AgNet-LocNet)./(1-LocNet.*LocNet);
 end
 % merge matrices into one structure to return
-AllSSN={SSN};
+AllSSN=SSN;
 

@@ -29,5 +29,5 @@ for(idx=1:NumSamp)
 	SWEET(:,idx)=Sp*0.1*(NumSamp-1)*(AgNet-LocNet)+LocNet; % K=0.1
 end
 % merge matrices into one structure to return
-AllSSN={SWEET};
+AllSSN=SWEET;
 

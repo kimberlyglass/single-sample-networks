@@ -24,5 +24,5 @@ for(idx=1:NumSamp)
 	LION(:,idx)=(NumSamp)*(AgNet-LocNet)+LocNet; % wq=1/N
 end
 % merge matrices into one structure to return
-AllSSN={LION};
+AllSSN=LION;
 
