@@ -11,4 +11,4 @@ The "NetworkCode" directory contains matlab functions which run the different si
 
 The "AnalysisCode" directory contains matlab functions which process the data and/or analyze the single-sample networks estimated by different approaches.
 
-The "python" directory contains two scripts to complement the "GenerateSSCorr.m" function in "NetworkCode". The python script "GenerateSSCorr.py" simultaneously runs four different single-sample network approaches based on Pearson correlation (LIONESS::PCC, SSN, SWEET, BONOBO) on the input data. The python script "run_SSN_method.py" allows the user to select one of these single-sample network approaches to run on the input data.
+The "matlab", "python", and "R" directories contain stand-alone implementations of the four 'linear' methods evaluated in the paper, including LIONESS::PCC, SSN, SWEET, and BONOBO. Insights into scalability and run-times of these implementations are also contained within those directories.
