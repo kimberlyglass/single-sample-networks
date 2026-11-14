@@ -1,8 +1,8 @@
 GenerateSSCorr <- function(LocExp){
   
   # determine size of input data
-  NumNode=dim(ExpData)[1];
-  NumSamp=dim(ExpData)[2];
+  NumNode=dim(LocExp)[1];
+  NumSamp=dim(LocExp)[2];
   
   # create filter to extract the upper diagonal
   uF=upper.tri(matrix(0, NumNode, NumNode));
@@ -56,8 +56,8 @@ GenerateSSCorr <- function(LocExp){
 GenerateLIONESS <-function(LocExp){
   
   # determine size of input data
-  NumNode=dim(ExpData)[1];
-  NumSamp=dim(ExpData)[2];
+  NumNode=dim(LocExp)[1];
+  NumSamp=dim(LocExp)[2];
   
   # create filter to extract the upper diagonal
   uF=upper.tri(matrix(0, NumNode, NumNode));
@@ -83,8 +83,8 @@ GenerateLIONESS <-function(LocExp){
 GenerateSSN <- function(LocExp){
   
   # determine size of input data
-  NumNode=dim(ExpData)[1];
-  NumSamp=dim(ExpData)[2];
+  NumNode=dim(LocExp)[1];
+  NumSamp=dim(LocExp)[2];
   
   # create filter to extract the upper diagonal
   uF=upper.tri(matrix(0, NumNode, NumNode));
@@ -110,8 +110,8 @@ GenerateSSN <- function(LocExp){
 GenerateSWEET <- function(LocExp){
   
   # determine size of input data
-  NumNode=dim(ExpData)[1];
-  NumSamp=dim(ExpData)[2];
+  NumNode=dim(LocExp)[1];
+  NumSamp=dim(LocExp)[2];
   
   # create filter to extract the upper diagonal
   uF=upper.tri(matrix(0, NumNode, NumNode));
@@ -142,8 +142,8 @@ GenerateSWEET <- function(LocExp){
 GenerateBONOBO <- function(LocExp){
   
   # determine size of input data
-  NumNode=dim(ExpData)[1];
-  NumSamp=dim(ExpData)[2];
+  NumNode=dim(LocExp)[1];
+  NumSamp=dim(LocExp)[2];
   
   # create filter to extract the upper diagonal
   uF=upper.tri(matrix(0, NumNode, NumNode));
