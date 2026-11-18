@@ -1,6 +1,6 @@
 # Challenges and Opportunities for Single-Sample Network Modeling
 
-This repository contains the code used to run the analyses and create the figures in our paper "Challenges and Opportunities for Single-Sample Network Modeling".
+This repository contains the code used to run the analyses and create the figures in our paper "Challenges and Opportunities for Single-Sample Network Modeling". A pre-print of the paper is available here: https://www.biorxiv.org/content/10.64898/2026.02.27.708608
 
 The main script is "RunAllAnalyses.m", which calls functions in both the "AnalysisCode" and "NetworkCode" directories. Figures are printed to the "Figures" directory. Intermediate data files are printed to the "Data" directory. All directories are fully populated with the output from running "RunAllAnalyses.m".
 
