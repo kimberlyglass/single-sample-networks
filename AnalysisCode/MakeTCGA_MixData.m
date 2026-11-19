@@ -34,24 +34,6 @@ sfilter=ismember(SampleSubtype, LocSubtypeNames);
 ExpData=ExpData(:,sfilter);
 SampleSubtype=SampleSubtype(sfilter);
 
-%{
-% select a random MinSamp number of samples from the remaining tissues
-[uSubtype,~,Sloc]=unique(SampleSubtype);
-SubExp=cell(1, length(uSubtype));
-SubIdx=cell(1, length(uSubtype));
-gMeds=zeros(length(GeneSymbols), length(uSubtype));
-for(scnt=1:length(uSubtype))
-	sidx=find(scnt==Sloc);
-	ridx=randperm(length(sidx));
-	sidx=sidx(ridx(1:MinSamp));
-	SubExp{scnt}=ExpData(:,sidx);
-	SubIdx{scnt}=sidx';
-	gMeds(:,scnt)=median(SubExp{scnt},2);
-end
-ExpData=cat(2, SubExp{:});
-SampleSubtype=SampleSubtype(cat(2, SubIdx{:}));
-%}
-
 % Determine the median expression across each subtype
 [uSubtype,~,Sloc]=unique(SampleSubtype);
 gMeds=zeros(length(GeneSymbols), length(uSubtype));
