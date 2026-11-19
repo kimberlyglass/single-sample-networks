@@ -1,6 +1,6 @@
 function VizSSNPatternsBG(netfile, otag, NodePairs, bgcnt);
 
-MethNames={'LIONESS::Pearson', 'SSN', 'SWEET', 'BONOBO', 'Aggregate'};
+MethNames={'LIONESS::PCC', 'SSN', 'SWEET', 'BONOBO', 'Aggregate'};
 NumMeth=length(MethNames)-1;
 
 if(strcmp(otag, ''))
